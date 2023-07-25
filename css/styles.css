@@ -9,6 +9,8 @@
    --slatecolor: #434455;
    --cloudcolor: #F4F4FD;
    --cornflower: #E7E9FC;
+   --lightslate:#8E8F99;
+   --grey:#2E2F42;
 }
 
 /* CSS Reset */
@@ -136,9 +138,12 @@ body {
 
 .hero{
     padding: 188px 0;
-    background-color: var(--navyblue);
-
-}
+    background: var(--navyblue);
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-size: 100% 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    }
 
 .hero-container{
     text-align: center;
@@ -195,6 +200,7 @@ body {
     font-weight: 500;
     letter-spacing: 0.4px;
     color: var(--navyblue);
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -209,8 +215,25 @@ body {
 
 .services-list{
     display: flex;
+    align-items: center;
     gap: 24px
-   }
+   } 
+
+.criteria-list{
+    border-radius: 4px;
+    padding-top: 24px;
+    padding-bottom: 50px;
+    width: 264px;
+    height: 112px;
+    background-color: var(--cloudcolor);
+   
+}
+
+
+.criteria-icons{
+    width: 264px;
+    fill: var(--navyblue, --iriscolor);
+}
 
 .section-gray {
     background-color: var(--cloudcolor);
@@ -221,6 +244,14 @@ body {
     gap: 24px;
 }
 
+.card-mark,
+.card-tom,
+.card-camila,
+.card-daniel{
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+    
+       
 .card-body{
     padding-top: 32px;
     padding-bottom: 32px;
@@ -249,6 +280,35 @@ body {
     letter-spacing: 0.05em;
 }
 
+.team-social-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-social-item{
+   width: 44px;
+   height: 44px;  
+}
+
+.team-social-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--cloudcolor);
+    background-color: var(--iriscolor);
+}
+
+.team-social-icon{
+    fill: currentColor;
+}
+
 .logo-footer {
     padding-bottom: 16px;
     font-style: normal;
@@ -263,6 +323,7 @@ body {
     padding: 100px 0;
     background-color: var(--navyblue);
 }
+
 
 .lastword {
     color: var(--cloudcolor);
@@ -329,3 +390,77 @@ body {
     padding: 32px 16px;
     border-top: none;
     }
+
+.customers-list{
+    display: flex;
+    gap: 22px;
+}
+
+.customers-item{
+    width: calc(100%-150px) / 6;
+    height: 90px;
+}
+.customers-link {
+    width: 170px;
+    height: 100px;
+    border: 2px solid #8E8F99;
+    border-radius: 5px;
+    color: #8E8F99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers-link:hover,
+.customers-link:focus,
+.footer-social-link:hover,
+.footer-social-link:focus{
+    border-color: #404BBF;
+    color: var(--oceancolor);
+}
+
+
+.customers-icon{
+    fill: currentColor;
+}
+
+.footer-socials-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    }
+
+.footer-social-item{
+    width: 44px;
+    height: 44px;
+   
+   
+}
+
+.footer-socials-title{
+    display: flex;
+    justify-content: center;
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+.footer-social-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cloudcolor);
+    background-color: var(--iriscolor);
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
